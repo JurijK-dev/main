@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Заказ документов</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-panel">
+                <li class="nav-panel_item"><a class="nav-panel_link" href="">Заказ документов</a></li>
+                <li class="nav-panel_item"><a class="nav-panel_link" target="_blank"
+                        href="https://jurijk-dev.github.io/autopbua/">Работа с обьявлениями</a></li>
+                <li class="nav-panel_item"><a class="nav-panel_link" target="_blank"
+                        href="https://jurijk-dev.github.io/form_kc/">Назначение эксперта КЦ</a>
+                </li>
+                <li class="nav-panel_item"><a class="nav-panel_link" target="_blank"
+                        href="https://jurijk-dev.github.io/changeValid/">Валидация</a></li>
+                <li class="nav-panel_item"><a class="nav-panel_link" target="_blank"
+                        href="https://jurijk-dev.github.io/ocautoescalation/">Эскалация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="all-forms">
+        <!-- Переоформление -->
+        <div class="pereoform">
+            <h2 class="title-name">Переоформление</h2>
+            <small class="subtitle">Заказ документов для переоформление лизинга</small>
+            <form class="form" action="https://0-157-0.app.nr.it.loc/doc" method="get">
+
+                <label class="label-form" for="input1">Номер договора</label>
+                <input class="input-form" type="text" id="input1" name="dogovorNumber" placeholder="Номер договора"
+                    required autocomplete="off" />
+
+                <label class="label-form" for="input2">Дата договора</label>
+                <input class="input-form" type="text" id="input2" name="dogovorDate" placeholder="12-12-2021" required
+                    autocomplete="off" />
+
+                <label class="label-form" for="input3">VIN номер</label>
+                <input class="input-form" type="text" id="input3" name="vinNumber" placeholder="VIN номер" required
+                    autocomplete="off" />
+                <label class="label-form" for="input4">Оценка</label>
+                <input class="input-form" type="text" id="input4" name="ocenkaId" placeholder="Z190GPB100000" required
+                    autocomplete="off" />
+
+                <label class="label-form" for="input5">ID клиента</label>
+                <input class="input-form" type="text" id="input5" name="clientId" placeholder="123568" required
+                    autocomplete="off" />
+
+                <label class="label-form" for="input6">ФИО клиента</label>
+                <input class="input-form" type="text" id="input6" name="fioWords" placeholder="Иванов Иван Иванович"
+                    required autocomplete="off" />
+                <p><input class="submit" type="submit" value="Заказать документы"></p>
+            </form>
+        </div>
+        <!-- Утеря -->
+
+        <div class="pereoform">
+            <h2 class="title-name">Утеря</h2>
+            <small class="subtitle">Заказ документов для восстановления ТП</small>
+            <form class="form" action="https://0-157-0.app.nr.it.loc/tp" method="get">
+
+                <label class="label-form" for="dogovorNumber">Номер договора</label>
+                <input class="input-form" type="text" id="dogovorNumber" name="dogovorNumber"
+                    placeholder="Номер договора" required autocomplete="off" />
+
+                <label class="label-form" for="dogovorDate">Дата договора</label>
+                <input class="input-form" type="text" id="dogovorDate" name="dogovorDate" placeholder="12-12-2021"
+                    required autocomplete="off" />
+
+
+                <label class="label-form" for="ocenkaId">Оценка</label>
+                <input class="input-form" type="text" id="ocenkaId" name="ocenkaId" placeholder="Z1877PB100000" required
+                    autocomplete="off" />
+
+                <label class="label-form" for="vinNumber">VIN номер</label>
+                <input class="input-form" type="text" id="vinNumber" name="vinNumber" placeholder="VIN номер" required
+                    autocomplete="off" />
+
+                <label class="label-form" for="carName">Авто</label>
+                <input class="input-form" type="text" id="carName" name="carName" placeholder="Daewoo Gentra" required
+                    autocomplete="off" />
+
+                <label class="label-form" for="regisNumber">Гос. номер</label>
+                <input class="input-form" type="text" id="regisNumber" name="regisNumber" placeholder="АА1232СВ"
+                    required autocomplete="off" />
+
+                <label class="label-form" for="dateWords">Текущая дата</label>
+                <input class="input-form" type="text" id="dateWords" name="dateWords" placeholder="14-12-2021" required
+                    autocomplete="off" />
+
+                <label class="label-form" for="expDate">Дата через три месяца</label>
+                <input class="input-form" type="text" id="expDate" name="expDate" placeholder="14-02-2022" required
+                    autocomplete="off" />
+
+                <label class="label-form" for="clientId">ID клиента</label>
+                <input class="input-form" type="text" id="clientId" name="clientId" placeholder="123568" required
+                    autocomplete="off" />
+
+                <label class="label-form" for="fioWords">ФИО клиента</label>
+                <input class="input-form" type="text" id="fioWords" name="fioWords" placeholder="Иванов Иван Иванович"
+                    required autocomplete="off" />
+
+                <label class="label-form" for="postamatBranch">Бранч отделения</label>
+                <input class="input-form" type="text" id="postamatBranch" name="postamatBranch" placeholder="DNH0"
+                    required autocomplete="off" />
+                <p><input class="submit" type="submit" value="Заказать документы"></p>
+            </form>
+        </div>
+        <!-- ГБО -->
+        <div class="pereoform">
+            <h2 class="title-name">ГБО</h2>
+            <small class="subtitle">Заказ документов для установки ГБО</small>
+            <form class="form" action="https://0-157-0.app.nr.it.loc/gbo" method="get">
+
+                <label class="label-form" for="dogovorNumber1">Номер договора</label>
+                <input class="input-form" type="text" id="dogovorNumber1" name="dogovorNumber"
+                    placeholder="Номер договора" required autocomplete="off" pattern="^[^\s]+(\s.*)?$" />
+
+                <label class="label-form" for="dogovorDate1">Дата договора</label>
+                <input class="input-form" type="text" id="dogovorDate1" name="dogovorDate" placeholder="12-12-2021"
+                    required autocomplete="off" />
+
+
+                <label class="label-form" for="ocenkaId1">Оценка</label>
+                <input class="input-form" type="text" id="ocenkaId1" name="ocenkaId" placeholder="Z1877PB100000"
+                    required autocomplete="off" />
+
+                <label class="label-form" for="vinNumber1">VIN номер</label>
+                <input class="input-form" type="text" id="vinNumber1" name="vinNumber" placeholder="VIN номер" required
+                    autocomplete="off" />
+
+                <label class="label-form" for="carName1">Авто</label>
+                <input class="input-form" type="text" id="carName1" name="carName" placeholder="Daewoo Gentra" required
+                    autocomplete="off" />
+
+                <label class="label-form" for="regisNumber1">Гос. номер</label>
+                <input class="input-form" type="text" id="regisNumber1" name="regisNumber" placeholder="АА1232СВ"
+                    required autocomplete="off" />
+
+                <label class="label-form" for="dateWords1">Текущая дата</label>
+                <input class="input-form" type="text" id="dateWords1" name="dateWords" placeholder="14-12-2021" required
+                    autocomplete="off" />
+
+                <label class="label-form" for="expDate1">Дата через три месяца</label>
+                <input class="input-form" type="text" id="expDate1" name="expDate" placeholder="14-02-2022" required
+                    autocomplete="off" />
+
+                <label class="label-form" for="clientId1">ID клиента</label>
+                <input class="input-form" type="text" id="clientId1" name="clientId" placeholder="123568" required
+                    autocomplete="off" />
+
+                <label class="label-form" for="fioWords1">ФИО клиента</label>
+                <input class="input-form" type="text" id="fioWords1" name="fioWords" placeholder="Иванов Иван Иванович"
+                    required autocomplete="off" />
+
+                <label class="label-form" for="postamatBranch1">Бранч отделения</label>
+                <input class="input-form" type="text" id="postamatBranch1" name="postamatBranch" placeholder="DNH0"
+                    required autocomplete="off" />
+                <p><input class="submit" type="submit" value="Заказать документы"></p>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

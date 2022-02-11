@@ -1,0 +1,137 @@
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/*font-family: 'Open Sans', sans-serif;*/
+
+.header {
+    height: 60px;
+    background: #F9F9F9;
+    margin-bottom: 0;
+}
+
+.nav {
+    max-width: 1440px;
+
+
+}
+
+.nav-panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-panel_item {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+
+}
+
+.nav-panel_link {
+    text-decoration: none;
+    color: #151515;
+}
+
+.nav-panel_link:hover {
+
+    border-bottom: 2px solid #6A983C;
+
+}
+
+.title-name {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #151515;
+}
+
+.subtitle {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A9A9A9;
+}
+
+.all-forms {
+    display: flex;
+}
+
+
+.pereoform {
+    margin: 68px 20px 0 40px;
+}
+
+.form {
+    width: 400px;
+    padding: 24px 20px 20px 20px;
+    margin-top: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+label {
+    display: block;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+.label-form {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.input-form {
+    padding: 12px;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.input-form::placeholder {
+    font-size: 14px;
+
+}
+
+.input-form:focus {
+    outline: none;
+}
+
+.input-form:focus {
+    border: 2px solid #6A983C;
+}
+
+
+.submit {
+    margin-top: 50px;
+    cursor: pointer;
+    align-items: center;
+    padding: 12px 48px;
+    width: 261px;
+    height: 48px;
+    right: 1110px;
+    bottom: 310px;
+    background: #6A983C;
+    border: 2px solid #46760A;
+    box-sizing: border-box;
+    border-radius: 12px;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+
+.submit:hover {
+    background-color: #E5E5E5;
+    color: #46760A;
+}
